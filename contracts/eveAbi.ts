@@ -48,6 +48,23 @@ export const eveAbi = [
     type: "function",
   },
   {
+    inputs: [{ name: "reason", type: "string" }],
+    name: "breakup",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [
+      { name: "newBoyfriend", type: "address" },
+      { name: "breakupReason", type: "string" },
+    ],
+    name: "chooseBoyfriend",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
     inputs: [{ name: "suitor", type: "address" }],
     name: "flirtCount",
     outputs: [{ name: "", type: "uint256" }],
